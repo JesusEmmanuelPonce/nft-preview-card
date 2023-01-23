@@ -26,16 +26,62 @@ main {
     width: 100%;
 }
 
-.card__picture img {
+.card__picture {
+    position: relative;
+}
+
+.card__picture-overlay {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
     border-radius: .5rem;
+    background-color: var(--cyan);
+    cursor: pointer;
+    opacity: 0;
+    transition: all .5s ease;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.card__picture:hover .card__picture-overlay {
+    opacity: .5;
+}
+
+.card__picture svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.card__picture:hover svg {
+    opacity: 1;
+}
+
+.card__picture img {  
+    border-radius: .5rem;
+    display: block;
     width: 100%;
 }
 
-.card__description h1 {
+.card__description h3 {
     color: var(--white);
+    cursor: pointer;
     font-size: 2rem;
     font-weight: 600;
     margin-top: 2rem;
+    width: max-content;
+}
+
+.card__description h3:hover {
+    color: var(--cyan);
 }
 
 .card__description p {
@@ -87,6 +133,11 @@ main {
 
 .card__footer span {
     color: var(--white)
+}
+
+.card__footer span:hover {
+    color: var(--cyan);
+    cursor: pointer;
 }
 
 .card__footer picture {
