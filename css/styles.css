@@ -1,0 +1,105 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Outfit', sans-serif, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    background-color: var(--very-dark-blue-main);
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.card {
+    background-color: var(--very-dark-blue-card);
+    border-radius: 1.5rem;
+    max-width: 31.6rem;
+    padding: 2rem;
+    width: 100%;
+}
+
+.card__picture img {
+    border-radius: .5rem;
+    width: 100%;
+}
+
+.card__description h1 {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.card__description p {
+    color: var(--soft-blue);
+    font-size: 1.67rem;
+    font-weight: 300;
+    line-height: 130%;
+}
+
+.card__description-status {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 2.1rem 0;
+}
+
+.card__description-status span {
+    align-items: center;
+    display: flex;
+
+    font-size: 1.4rem;
+}
+
+.card__description-status span.eth {
+    color: var(--cyan);
+}
+
+.card__description-status span.days-left {
+    color: var(--soft-blue);
+}
+
+.card__description-status span svg {
+    margin-right: .7rem;
+}
+
+.card hr {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid var(--very-dark-blue-line);
+}
+
+.card__footer {
+    color: var(--soft-blue);
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.card__footer span {
+    color: var(--white)
+}
+
+.card__footer picture {
+    align-items: center;
+    display: flex;
+}
+
+.card__footer picture img {
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    width: 3rem;
+}
+
+.card__footer picture figcaption {
+    margin-left: 1.5rem;
+}
